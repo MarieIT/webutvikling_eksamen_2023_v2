@@ -11,30 +11,41 @@
     </head>
     <body>
         <h1>About page</h1>
-        <!--Headeren til nettsiden med logo og navigasjon-->
+        <!--Headeren til nettsiden med logo og navigasjon med linking til index, portfolio og about-->
         <header>
             <nav>
                 <ol>
                     <li>
-                        <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content"> 
+                        <a href="index.html">
+                            <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content">
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">Home</p>
+                        <a href="index.html">
+                            <p class="header-content">Home</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">Portfolio</p>
+                        <a href="portfolio.html">
+                            <p class="header-content">Portfolio</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">About</p>
+                        <a href="about.html">
+                            <p class="header-content">About</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content" id="contact">Contact</p>
+                        <a href="about.html">
+                           <p class="header-content" id="contact">Contact</p> 
+                        </a>
                     </li>
                 </ol>
             </nav>
         </header>
         <main> 
             <section>
+                <!--Seksjon om bedriften og navnet deres-->
                 <p>Company name</p>
                 <h2>About our company</h2>
                 <p>
@@ -48,9 +59,10 @@
                     Excepteur sint occaecat cupidatat non proident, 
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <!--Kode-del tatt fra W3Schools-->
-                <button type="button">Get in touch with us</button>
+                <!--Brukte geekforgeeks.org for å finne ut av hvordan man linker til seksjoner inne i et HTMl dokument-->
+                <a href="#contact-us">Get in touch with us</a>
             </section>
+            <!--Seksjon om hvilke tjenester som tilbys-->  
             <section>
                 <h2>Our services</h2>
                     <ol>
@@ -85,16 +97,18 @@
                          </li>
                     </ol>
             </section>
+            <!--Seksjon om noen av deres klienter-->
             <section>
                 <h2>Some of our clients</h2>
                 <img src="img/logo1.png" alt="logo to one of the clients">
                 <img src="img/logo2.png" alt="logo to one of the clients">
                 <img src="img/logo3.png" alt="logo to one of the clients">
             </section>
-            <section>
+            <!--Seksjon med kontaktskjema og kontakt informasjon til bedriften-->
+            <section id="contact-us">
                 <h2>Contact us</h2>
                 <h3>Send us a message</h3>
-                <!--Kode-del tatt fra W3Schools-->
+                <!--Kode-del tatt fra W3Schools (html-forms)-->
                 <form action="/action_page.php"></form>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" value="Ola Nordmann..."><br>
@@ -114,15 +128,19 @@
                 <a href="postmottak@hiof.no">Mailadresse</a>
             </section>
             <section>
+                <!--Seksjon med kart fra google-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4869.089700913146!2d11.356581833404448!3d59.12905487128127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1700504688723!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
         <footer>
-            <img src="img/logo1.png" alt="Logo to the footer of the website">
+            <!--Footer med logo (som inkluderer link til index), og linker til Facebook, Instagram og Linkedin-->
+            <a href="index.html">
+                <img src="img/logo1.png" alt="Logo to the footer of the website"> 
+            </a>
             <p>Companyrights Companyname 2023</p>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>Linkedin</p>
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">Linkedin</a></p>
         </footer>
     </body>
 </html>

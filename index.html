@@ -11,32 +11,43 @@
     </head>
         <body>
             <h1>Front page</h1>
-            <!--Headeren til nettsiden med logo og navigasjon-->
+            <!--Headeren til nettsiden med logo og navigasjon med linking til index, portfolio og about-->
             <header>
                 <nav>
                     <ol>
                         <li>
-                            <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content"> 
+                            <a href="index.html">
+                                <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content">
+                            </a>
+                            
                         </li>
                         <li>
-                            <p class="header-content">Home</p>
+                            <a href="index.html">
+                                <p class="header-content">Home</p>
+                            </a>
                         </li>
                         <li>
-                            <p class="header-content">Portfolio</p>
+                            <a href="portfolio.html">
+                                <p class="header-content">Portfolio</p>
+                            </a>
                         </li>
                         <li>
-                            <p class="header-content">About</p>
+                            <a href="about.html">
+                                <p class="header-content">About</p>
+                            </a>
                         </li>
                         <li>
-                            <p class="header-content" id="contact">Contact</p>
+                            <a href="about.html">
+                                <p class="header-content" id="contact">Contact</p> 
+                            </a>
                         </li>
                     </ol>
                 </nav>
             </header>
             <main> 
-                <!--1 seksjon med bilde, tekst og en read more knapp-->
+                <!--1 seksjon med bilde, tekst og en read more knapp som er linket til about siden-->
                 <section id="main-section1">
-                <h2>Compeling headline</h2>
+                    <h2>Compeling headline</h2>
                     <p>
                     At vero eos et accusamus et iusto odio
                     dignissimos ducimus qui blanditiis praesentium 
@@ -44,8 +55,11 @@
                     quos dolores et quas molestias excepturi sint 
                     occaecati cupiditate non provident
                     </p>
-                    <p class="read-more-button">Read more about our services</p>
+                    <a href="about.html">
+                        <p class="read-more-button">Read more about our services</p>
+                    </a>  
                 </section>
+                <!--Seksjon med overskrift og tekst om hva du kan hjelpe besøkende med-->  
                 <section>
                     <h2>Enganging subheading.
                     What can you help your visitors with
@@ -59,6 +73,7 @@
                     </p>
                 </section>
                 <section>
+                    <!--Seksjon med artikkel om bedriften, inkluderer bilde og tekst + link til about siden-->  
                     <article>
                         <h2>About Our Company</h2>
                         <img src="img/400x400.png" alt="#">
@@ -71,9 +86,13 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur
                         </p>
-                        <p class="read-more-button">Read more about us</p>
+                        <a href="about.html">
+                            <p class="read-more-button">Read more about us</p> 
+                        </a>
+                        
                     </article>
                 </section>
+                <!--Seksjon om hvilke tjenester som tilbys-->  
                 <section>
                     <h2>Our services</h2>
                     <ol>
@@ -108,9 +127,10 @@
                          </li>
                     </ol>
                 </section>
+                <!--Seksjon for nyhetsbrev-->
                 <section>
                     <h2>Sign up for our newsletter</h2>
-                    <!--Kode-del tatt fra W3Schools-->
+                    <!--Kode-deler tatt fra W3Schools (html-button tag og html-input type email)-->
                     <form action="/action_page.php">
                         <label for="email">Nora@epost.no</label>
                         <input type="email" id="email" name="email"> 
@@ -118,12 +138,16 @@
                     </form>
                 </section>
             </main>
+            <!--Footer med logo (som inkluderer link til index), og linker til Facebook, Instagram og Linkedin-->  
             <footer>
-                <img src="img/logo1.png" alt="Logo to the footer of the website">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="Logo to the footer of the website"> 
+                </a>
                 <p>Companyrights Companyname 2023</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Linkedin</p>
+                <!--Kode-del tatt fra W3Schools (html-hyperlinks)-->
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                <p><a href="https://www.facebook.com/" target="_blank">Instagram</a></p>
+                <p><a href="https://www.facebook.com/" target="_blank">Linkedin</a></p>
             </footer>
         </body>
 </html>

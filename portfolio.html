@@ -11,35 +11,44 @@
     </head>
     <body>
         <h1>Portfolio page</h1>
-        <!--Headeren til nettsiden med logo og navigasjon-->
+        <!--Headeren til nettsiden med logo og navigasjon med linking til index, portfolio og about-->
         <header>
             <nav>
                 <ol>
                     <li>
-                        <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content"> 
+                        <a href="index.html">
+                            <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content">
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">Home</p>
+                        <a href="index.html">
+                            <p class="header-content">Home</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">Portfolio</p>
+                        <a href="portfolio.html">
+                            <p class="header-content">Portfolio</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content">About</p>
+                        <a href="about.html">
+                            <p class="header-content">About</p>
+                        </a>
                     </li>
                     <li>
-                        <p class="header-content" id="contact">Contact</p>
+                        <a href="about.html">
+                            <p class="header-content" id="contact">Contact</p> 
+                        </a>
                     </li>
                 </ol>
             </nav>
         </header>
         <main> 
+            <h2>Portfolio</h2>
             <section>
-                <h2>Portfolio</h2>
-            </section> 
-            <section>
+                <!--Seksjon med navigasjonsmeny mellom branding, design og development-->
                 <nav>
-                <!--Kode-del tatt fra W3Schools-->
+                <!--Kode-del tatt fra W3Schools (html-button tag)-->
                 <h2>Explore previous jobs</h2>
                     <button type="button">Branding</button>
                     <button type="button">Design</button> 
@@ -47,6 +56,7 @@
                 </nav>
             </section>
             <section>
+                <!--Seksjon med artikler om branding, design og development-->
                 <h2>Branding</h2>
                 <article>
                     <img src="img/400x400.png" alt="#">
@@ -93,11 +103,14 @@
             </section>
         </main>
         <footer>
-            <img src="img/logo1.png" alt="Logo to the footer of the website">
+            <!--Footer med logo (som inkluderer link til index), og linker til Facebook, Instagram og Linkedin-->
+            <a href="index.html">
+                <img src="img/logo1.png" alt="Logo to the footer of the website"> 
+            </a>
             <p>Companyrights Companyname 2023</p>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>Linkedin</p>
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/" target="_blank">Linkedin</a></p>
         </footer>
     </body>
 </html>
