@@ -10,137 +10,131 @@
         </title>
     </head>
     <body>
-        <h1>About page</h1>
-        <!--Headeren til nettsiden med logo og navigasjon med linking til index, portfolio og about-->
-        <header>
-            <nav>
-                <ol>
-                    <li>
-                        <a href="index.html">
-                            <img src="img/logo1.png" alt="Logo to the header of the website" class="header-content">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <p class="header-content">Home</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">
-                            <p class="header-content">Portfolio</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <p class="header-content">About</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                           <p class="header-content" id="contact">Contact</p> 
-                        </a>
-                    </li>
-                </ol>
-            </nav>
-        </header>
-        <main> 
-            <section>
-                <!--Seksjon om bedriften og navnet deres-->
-                <p>Company name</p>
-                <h2>About our company</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <!--Brukte geekforgeeks.org for å finne ut av hvordan man linker til seksjoner inne i et HTMl dokument-->
-                <a href="#contact-us">Get in touch with us</a>
-            </section>
-            <!--Seksjon om hvilke tjenester som tilbys-->  
-            <section>
-                <h2>Our services</h2>
+        <!--Id tatt fra min egen oblig 3 i webutvikling 2023-->
+        <div id="grid-container">
+            <h1>About page</h1>
+            <!--Headeren til nettsiden med logo og navigasjon med linking til index, portfolio og about-->
+            <header>
+                <nav>
                     <ol>
                         <li>
-                           <h3>Branding</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit
-                            </p> 
-                            
+                            <a href="index.html"><img src="img/logo1.png" alt="Logo to the header of the website"></a>
                         </li>
-                        <li>
-                            <h3>Branding</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit
-                            </p>
-                         </li>
-                         <li>
-                            <h3>Branding</h3>
-                             <p>
-                                 Lorem ipsum dolor sit amet, 
-                                 consectetur adipiscing elit
-                             </p> 
-                         </li>
-                         <li>
-                            <h3>Branding</h3>
-                             <p>
-                                 Lorem ipsum dolor sit amet, 
-                                 consectetur adipiscing elit
-                             </p> 
-                         </li>
+                        <li class="list-header" id="li2">
+                            <p class="header-content"><a href="index.html">Home</a></p>
+                        </li>
+                        <li class="list-header">
+                            <p class="header-content"><a href="portfolio.html">Portfolio</a></p>
+                        </li>
+                        <li class="list-header">
+                            <p class="header-content"><a href="about.html">About</a></p>
+                        </li>
+                        <li class="list-header">
+                            <p class="header-content"><a href="about.html" id="contact">Contact</a></p>
+                        </li>
                     </ol>
-            </section>
-            <!--Seksjon om noen av deres klienter-->
-            <section>
-                <h2>Some of our clients</h2>
-                <img src="img/logo1.png" alt="logo to one of the clients">
-                <img src="img/logo2.png" alt="logo to one of the clients">
-                <img src="img/logo3.png" alt="logo to one of the clients">
-            </section>
-            <!--Seksjon med kontaktskjema og kontakt informasjon til bedriften-->
-            <section id="contact-us">
-                <h2>Contact us</h2>
-                <h3>Send us a message</h3>
-                <!--Kode-del tatt fra W3Schools (html-forms)-->
-                <form action="/action_page.php"></form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" value="Ola Nordmann..."><br>
-                <label for="subject">Subject</label><br>
-                <input type="text" id="subject" name="subject" value="Branding..."><br><br>
-                <label for="message">message</label><br>
-                <input type="text" id="message" name="message" value="#"><br>
-                <input type="submit" value="Send message">
-                <h3>Contact information</h3>
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos
-                    ducimus qui blanditiis praesentium voluptatum deleniti 
-                    atque corrupti quos dolores et quas molestias excepturi sint
-                </p>
-                <p>B R A Veien 4, 1757 Halden</p>
-                <p>69 60 80 00</p>
-                <a href="postmottak@hiof.no">Mailadresse</a>
-            </section>
-            <section>
-                <!--Seksjon med kart fra google-->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4869.089700913146!2d11.356581833404448!3d59.12905487128127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1700504688723!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </main>
-        <footer>
-            <!--Footer med logo (som inkluderer link til index), og linker til Facebook, Instagram og Linkedin-->
-            <a href="index.html">
-                <img src="img/logo1.png" alt="Logo to the footer of the website"> 
-            </a>
-            <p>Companyrights Companyname 2023</p>
-            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-            <p><a href="https://www.facebook.com/" target="_blank">Instagram</a></p>
-            <p><a href="https://www.facebook.com/" target="_blank">Linkedin</a></p>
-        </footer>
+                </nav>
+            </header>
+            <main> 
+                <section id="main-section1-about">
+                    <!--Seksjon om bedriften og navnet deres-->
+                    <p>Company name</p>
+                    <h2>About our company</h2>
+                    <p id="main-section1-about-text">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
+                        Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur.<br> 
+                        Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+                    </p>
+                    <!--Brukte geekforgeeks.org for å finne ut av hvordan man linker til seksjoner inne i et HTMl dokument-->
+                    <a href="#main-section4-about">Get in touch with us</a>
+                </section>
+                <!--Seksjon om hvilke tjenester som tilbys-->  
+                <section id="main-section2-about">
+                    <h2>Our services</h2>
+                        <ol>
+                            <li>
+                                <h3>Branding</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br> 
+                                    consectetur adipiscing elit
+                                </p> 
+                            </li>
+                            <li>
+                                <h3>Branding</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br> 
+                                    consectetur adipiscing elit
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Branding</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipiscing elit
+                                </p> 
+                            </li>
+                            <li>
+                                <h3>Branding</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet,<br>
+                                    consectetur adipiscing elit
+                                </p> 
+                            </li>
+                        </ol>
+                </section>
+                <!--Seksjon om noen av klientene-->
+                <section id="main-section3-about">
+                    <h2>Some of our clients</h2>
+                    <img src="img/logo1.png" alt="logo to one of the clients">
+                    <img src="img/logo2.png" alt="logo to one of the clients">
+                    <img src="img/logo3.png" alt="logo to one of the clients">
+                </section>
+                <!--Seksjon med kontaktskjema og kontakt informasjon til bedriften-->
+                <section id="main-section4-about" id="grid-section-about">
+                    <h2>Contact us</h2>
+                    <h3 id="send-message-about">Send us a message</h3>
+                    <!--Kode-del tatt fra W3Schools (html-forms)-->
+                    <form action="#" id="send-message">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" value="Ola Nordmann..."><br>
+                        <label for="subject">Subject</label><br>
+                        <input type="text" id="subject" name="subject" value="Branding..."><br><br>
+                        <label for="message">Message</label><br>
+                        <input type="text" id="message" name="message" value="#"><br>
+                        <input type="submit" value="Send message" id="send-message-input">
+                        </form>
+                    <h3 id="contact-information-about">Contact information</h3>
+                    <p id="information-text-about">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus<br> qui blanditiis praesentium voluptatum deleniti 
+                        atque corrupti<br> quos dolores et quas molestias excepturi sint
+                    </p>
+                    <p id="adress-about">B R A Veien 4, 1757 Halden</p>
+                    <p id="phone-number-about">69 60 80 00</p>
+                    <a id="mailadress-about" href="postmottak@hiof.no">Postmottak@hiof.no</a>
+                </section>
+                <section>
+                    <!--Seksjon med kart fra google-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4869.089700913146!2d11.356581833404448!3d59.12905487128127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1700504688723!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="google-maps"></iframe>
+                </section>
+            </main>
+            <!--Footer med logo (som inkluderer link til index), og linker til Facebook, Instagram og Linkedin-->   
+             <footer>
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="Logo to the footer of the website"> 
+                </a>
+                <p class="footer-text" id="footer-company-text">Companyrights Companyname 2023</p>
+                <!--Kode-del tatt fra W3Schools (html-hyperlinks)-->
+                <p class="footer-text"><a class="sosiale-medier" href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                <p class="footer-text"><a class="sosiale-medier" href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                <p class="footer-text"><a class="sosiale-medier" href="https://www.linkedin.com/" target="_blank">Linkedin</a></p>
+            </footer>
+        </div>
     </body>
 </html>

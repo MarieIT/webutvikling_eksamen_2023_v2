@@ -1,9 +1,420 @@
 body {
-  font-family: sans-serif;
+  font-family: "sans-serif";
+  /*I oppsettet av grid har jeg tatt inspirasjon fra Webtricks LMS "webutvikling-CSS grid og min egen oblig 3 oppgave i webutvikling 2023*/
+  /*Her begynner header styling med css*/
+}
+body #grid-container {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 body h1 {
   display: none;
 }
 body header {
   background-color: #fff;
+  grid-area: header;
+}
+body header nav ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+body header nav ol li a img {
+  width: 75px;
+}
+body header nav ol a {
+  text-decoration: none;
+  color: black;
+}
+body header nav ol #li2 {
+  padding-left: 1550px;
+}
+body header nav ol .list-header {
+  margin-top: 10px;
+}
+body header nav ol .header-content {
+  font-weight: bold;
+}
+body header nav ol #contact {
+  background-color: #e6bd43;
+  padding: 10px;
+  font-weight: bold;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
+}
+
+/*Her begynner front-page-sidens styling med css*/
+#main-section1 {
+  background-color: lightgray;
+  padding: 20px;
+}
+#main-section1 h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#main-section1 p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+#main-section1 a {
+  color: black;
+  text-decoration: none;
+}
+#main-section1 .read-more-button {
+  background-color: #e6bd43;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 800px;
+  margin-right: 800px;
+  margin-top: 0px;
+}
+
+#main-section2 {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+#main-section3 article {
+  display: grid;
+  grid-template-areas: "img h2 .";
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+#main-section3 article h2 {
+  text-align: left;
+  grid-area: h2;
+  padding: 80px 0px 0px 100px;
+}
+#main-section3 article p {
+  text-align: left;
+  grid-area: h2;
+  padding: 130px 0px 0px 100px;
+}
+#main-section3 article a {
+  grid-area: h2;
+  text-align: left;
+  padding: 120px 0px 0px 0px;
+  text-decoration: none;
+}
+#main-section3 article a #button-main-section3 {
+  border: 3px solid black;
+  color: black;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+  margin: 120px 350px 16px 100px;
+}
+#main-section3 article #placeholder-img-front {
+  grid-area: img;
+  max-width: 350px;
+  min-width: 200px;
+  margin: 35px 0px 35px 275px;
+}
+
+#main-section4 {
+  margin: 40px 0px 50px 0px;
+}
+#main-section4 h2 {
+  text-align: center;
+}
+#main-section4 ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+#main-section4 li {
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}
+
+#main-section5 {
+  background-color: #e5dddd;
+  text-align: center;
+  padding: 15px 0px 30px 0px;
+}
+#main-section5 form input {
+  padding: 10px 10px 10px 10px;
+  border: solid thin black;
+}
+#main-section5 form button {
+  padding: 10px 10px 10px 10px;
+  background-color: #e6bd43;
+  font-weight: bold;
+  border: solid thin black;
+}
+
+/*Her begynner portfolio-sidens styling med css*/
+#heading2-portfolio {
+  background-color: lightgray;
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#main-section1-portfolio {
+  padding: 30px 30px 10px 30px;
+  background-color: #fff;
+}
+#main-section1-portfolio nav h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: solid medium #e6bd43;
+  padding-bottom: 10px;
+}
+#main-section1-portfolio nav button {
+  padding: 10px 10px 10px 10px;
+  margin-right: 20px;
+  border: solid thin black;
+}
+
+#main-section2-portfolio {
+  padding: 10px 30px 30px 30px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 25% 50% 50%;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-areas: "h2 h2 h2" "article1-main-section2 article2-main-section2 article3-main-section2" "article4-main-section2 . .";
+  justify-content: space-between;
+}
+#main-section2-portfolio h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: solid medium #e6bd43;
+  padding-bottom: 10px;
+  grid-area: h2;
+}
+#main-section2-portfolio article img {
+  max-width: 350px;
+  min-width: 200px;
+}
+#main-section2-portfolio #article1-main-section2 {
+  grid-area: article1-main-section2;
+}
+#main-section2-portfolio #article2-main-section2 {
+  grid-area: article2-main-section2;
+}
+#main-section2-portfolio #article3-main-section2 {
+  grid-area: article3-main-section2;
+  margin-left: 110px;
+}
+#main-section2-portfolio #article4-main-section2 {
+  grid-area: article4-main-section2;
+}
+
+#main-section3-portfolio {
+  padding: 10px 30px 30px 30px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 25% 50%;
+  grid-template-columns: 25% 25%;
+  grid-template-areas: "h2 h2 h2" "article1-main-section3 article2-main-section3 article3-main-section3";
+  justify-content: space-between;
+}
+#main-section3-portfolio h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: solid medium #e6bd43;
+  padding-bottom: 10px;
+  grid-area: h2;
+}
+#main-section3-portfolio article img {
+  max-width: 350px;
+  min-width: 200px;
+}
+#main-section3-portfolio #article1-main-section3 {
+  grid-area: article1-main-section3;
+}
+#main-section3-portfolio #article2-main-section3 {
+  grid-area: article2-main-section3;
+}
+#main-section3-portfolio #article3-main-section3 {
+  grid-area: article3-main-section3;
+}
+
+#main-section4-portfolio {
+  padding: 10px 30px 30px 30px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 25%;
+  grid-template-columns: 25%;
+  grid-template-areas: "h2 h2" "article1-main-section4 article2-main-section4";
+  justify-content: space-between;
+}
+#main-section4-portfolio h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: solid medium #e6bd43;
+  padding-bottom: 10px;
+  grid-area: h2;
+}
+#main-section4-portfolio article img {
+  max-width: 350px;
+  min-width: 200px;
+}
+#main-section4-portfolio #article1-main-section4 {
+  grid-area: article1-main-section4;
+}
+#main-section4-portfolio #article2-main-section4 {
+  grid-area: article2-main-section4;
+  margin-left: 100px;
+}
+
+/*Her begynner about-sidens styling med css*/
+#main-section1-about {
+  background-color: lightgray;
+  padding: 20px 20px 30px 20px;
+  text-align: center;
+}
+#main-section1-about #main-section1-about-text {
+  margin-bottom: 35px;
+}
+#main-section1-about a {
+  text-decoration: none;
+  color: black;
+  background-color: #e6bd43;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+}
+
+#main-section2-about {
+  margin: 40px 0px 50px 0px;
+}
+#main-section2-about h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+#main-section2-about ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+#main-section2-about li {
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}
+
+#main-section3-about {
+  background-color: #e6bd43;
+  padding: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#main-section3-about img {
+  width: 75px;
+  padding: 20px;
+}
+
+#main-section4-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "h2 h2" "send-message-about contact-information-about" "send-message information-text-about";
+}
+#main-section4-about h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0px;
+  grid-area: h2;
+}
+#main-section4-about form input {
+  margin-top: 5px;
+  padding: 5px 3px 5px 3px;
+  margin-bottom: 10px;
+}
+#main-section4-about form #send-message-input {
+  background-color: #e6bd43;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#main-section4-about #send-message-about {
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  grid-area: send-message-about;
+  padding-top: 20px;
+  margin-left: 300px;
+}
+#main-section4-about #contact-information-about {
+  font-size: 1.3rem;
+  grid-area: contact-information-about;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 200px;
+}
+#main-section4-about #send-message {
+  grid-area: send-message;
+  margin: 20px 0px 50px 300px;
+}
+#main-section4-about #information-text-about {
+  grid-area: information-text-about;
+  margin: 20px 16px 0px 200px;
+}
+#main-section4-about #adress-about {
+  grid-area: information-text-about;
+  margin: 90px 16px 0px 200px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#main-section4-about #phone-number-about {
+  grid-area: information-text-about;
+  margin: 125px 16px 0px 200px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#main-section4-about #mailadress-about {
+  grid-area: information-text-about;
+  margin: 160px 16px 0px 200px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#google-maps {
+  width: 1920px;
+  height: 250px;
+}
+
+/* Footer med styling css*/
+footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+footer a img {
+  width: 75px;
+}
+footer #footer-company-text {
+  padding-left: 700px;
+  padding-right: 625px;
+}
+footer .footer-text {
+  color: #fff;
+  align-self: center;
+}
+footer .sosiale-medier {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

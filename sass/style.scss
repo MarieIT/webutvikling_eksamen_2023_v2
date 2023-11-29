@@ -1,12 +1,526 @@
 body{ 
-    font-family: sans-serif;
+    font-family: "sans-serif";
+    
+    /*I oppsettet av grid har jeg tatt inspirasjon fra Webtricks LMS "webutvikling-CSS grid og min egen oblig 3 oppgave i webutvikling 2023*/
+    #grid-container{
+        display: grid; 
+        grid-template-areas: "header header header"
+                            "main main main"
+                            "footer footer footer";
+    }
     
     h1{
         display: none; 
     }
-
+    /*Her begynner header styling med css*/
     header{
         background-color: #fff;
+        grid-area: header;
+
+
+        nav{
+
+            ol{
+                list-style: none; 
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 10px; 
+                padding-right: 10px; 
+                margin-top: 6px; 
+                margin-bottom: 3px;
+
+                li{
+                    a{
+
+                        img{
+                            width: 75px;
+                        }
+                    }
+                }
+                
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                #li2{
+                    padding-left: 1550px;
+                }
+
+                .list-header{
+                    margin-top: 10px; 
+                }
+
+                .header-content{
+                    font-weight: bold; 
+                }
+               
+
+                #contact{
+                    background-color: #e6bd43; 
+                    padding: 10px;  
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    main{
+        grid-area: main; 
+    }
+
+    footer{
+        grid-area: footer; 
     }
 }
+
+/*Her begynner front-page-sidens styling med css*/
+#main-section1{
+    background-color: lightgray;
+    padding: 20px; 
+    
+    h2{
+        font-size: 2.8rem;
+        text-align: center; 
+        margin-bottom: 0px; 
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 35px; 
+    }
+
+        
+    a{
+        color: black; 
+        text-decoration: none; 
+    }    
+
+    .read-more-button{
+        background-color: #e6bd43;
+        padding: 10px;  
+        font-weight: bold; 
+        margin-left: 800px;
+        margin-right: 800px; 
+        margin-top: 0px; 
+    }
+  
+}
+
+#main-section2{
+    background-color: #fff; 
+    text-align: center; 
+    padding: 20px;
+    border-bottom-style: solid; 
+    border-bottom-width: thin; 
+}
+
+#main-section3{
+    
+    article{
+            display: grid; 
+            grid-template-areas: "img h2 .";
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom-style: solid; 
+            border-bottom-width: thin; 
+
+        h2{
+            text-align: left;
+            grid-area: h2;
+            padding: 80px 0px 0px 100px; 
+        }
+        p{
+            text-align: left; 
+            grid-area: h2; 
+            padding: 130px 0px 0px 100px; 
+        }
+
+        a{
+            grid-area: h2;
+            text-align: left; 
+            padding: 120px 0px 0px 0px;
+            text-decoration: none;   
+            
+            #button-main-section3{
+                border: 3px solid black; 
+                color: black; 
+                font-weight: bold; 
+                padding: 10px 10px 10px 10px; 
+                margin: 120px 350px 16px 100px; 
+            }
+        }
+        
+        #placeholder-img-front{
+            grid-area: img; 
+            max-width: 350px;
+            min-width: 200px; 
+            margin: 35px 0px 35px 275px;
+        }
+
+    }
+    
+}
+
+#main-section4{
+    margin: 40px 0px 50px 0px; 
+    h2{
+        text-align: center;
+    }
+
+    ol{
+        list-style: none; 
+        display: flex; 
+        flex-direction: row;
+    }
+
+    li{
+        justify-content: space-around;
+        margin: auto; 
+        text-align: center; 
+    }
+}
+
+#main-section5{
+    background-color: #e5dddd; 
+    text-align: center; 
+    padding: 15px 0px 30px 0px;
+
+    form{
+
+        input{
+            padding: 10px 10px 10px 10px;
+            border: solid thin black;  
+       }
+
+       button{
+        padding: 10px 10px 10px 10px; 
+        background-color: #e6bd43;
+        font-weight: bold;
+        border: solid thin black;  
+       }
+    }
+}
+
+/*Her begynner portfolio-sidens styling med css*/
+#heading2-portfolio{
+    background-color: lightgray;
+    padding: 100px 0px 100px 0px;  
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 3rem; 
+    margin: 0; 
+}
+
+#main-section1-portfolio{
+    padding: 30px 30px 10px 30px;
+    background-color: #fff;
+     
+    nav{
+
+        h2{
+            font-weight: bold; 
+            font-size: 2.0rem; 
+            border-bottom: solid medium #e6bd43;
+            padding-bottom: 10px;  
+        }
+
+        button{
+            padding: 10px 10px 10px 10px; 
+            margin-right: 20px; 
+            border: solid thin black; 
+        }
+    }   
+}
+
+#main-section2-portfolio{
+    padding: 10px 30px 30px 30px; 
+    background-color: #fff;
+    display: grid; 
+    grid-template-rows: 25% 50% 50%; 
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas: "h2 h2 h2" "article1-main-section2 article2-main-section2 article3-main-section2" "article4-main-section2 . ."; 
+    justify-content: space-between;
+
+    h2{
+        font-weight: bold; 
+        font-size: 2.0rem; 
+        border-bottom: solid medium #e6bd43;
+        padding-bottom: 10px; 
+        grid-area: h2; 
+    } 
+
+    article{
+        img{
+            max-width: 350px;
+            min-width: 200px;
+        }
+    }
+
+    #article1-main-section2{
+            grid-area: article1-main-section2; 
+    }
+
+    #article2-main-section2{
+            grid-area: article2-main-section2; 
+    }
+
+    #article3-main-section2{
+            grid-area: article3-main-section2; 
+            margin-left: 110px; 
+    }
+
+    #article4-main-section2{
+            grid-area: article4-main-section2;
+    }
+}
+
+#main-section3-portfolio{
+    padding: 10px 30px 30px 30px; 
+    background-color: #fff;
+    display: grid; 
+    grid-template-rows: 25% 50%; 
+    grid-template-columns: 25% 25%;
+    grid-template-areas: "h2 h2 h2" "article1-main-section3 article2-main-section3 article3-main-section3"; 
+    justify-content: space-between;
+
+    h2{
+        font-weight: bold; 
+        font-size: 2.0rem; 
+        border-bottom: solid medium #e6bd43;
+        padding-bottom: 10px; 
+        grid-area: h2; 
+    } 
+
+       article{
+        img{
+            max-width: 350px;
+            min-width: 200px;
+        }
+    }
+
+    #article1-main-section3{
+        grid-area: article1-main-section3; 
+    }
+
+    #article2-main-section3{
+        grid-area: article2-main-section3; 
+    }
+
+    #article3-main-section3{
+        grid-area: article3-main-section3; 
+    }
+}
+
+#main-section4-portfolio{
+    padding: 10px 30px 30px 30px; 
+    background-color: #fff;
+    display: grid; 
+    grid-template-rows: 25%; 
+    grid-template-columns: 25%;
+    grid-template-areas: "h2 h2" "article1-main-section4 article2-main-section4"; 
+    justify-content: space-between;
+
+    h2{
+        font-weight: bold; 
+        font-size: 2.0rem; 
+        border-bottom: solid medium #e6bd43;
+        padding-bottom: 10px; 
+        grid-area: h2; 
+    } 
+
+       article{
+        img{
+            max-width: 350px;
+            min-width: 200px;
+        }
+    }
+
+    #article1-main-section4{
+        grid-area: article1-main-section4; 
+    }
+
+    #article2-main-section4{
+        grid-area: article2-main-section4; 
+        margin-left: 100px; 
+    }
+}
+
+/*Her begynner about-sidens styling med css*/
+#main-section1-about{
+    background-color: lightgray;
+    padding: 20px 20px 30px 20px;
+    
+    text-align: center; 
+
+    #main-section1-about-text{
+        margin-bottom: 35px; 
+    }
+   
+    a{
+        text-decoration: none; 
+        color: black;
+        background-color: #e6bd43;
+        padding: 10px 10px 10px 10px; 
+        font-weight: bold;  
+    }
+}
+
+#main-section2-about{
+    margin: 40px 0px 50px 0px; 
+    h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.8rem; 
+    }
+
+    ol{
+        list-style: none; 
+        display: flex; 
+        flex-direction: row;
+    }
+
+    li{
+        justify-content: space-around;
+        margin: auto; 
+        text-align: center; 
+    }
+}
+
+#main-section3-about{
+    background-color: #e6bd43;
+    padding: 40px; 
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.2rem; 
+
+    img{
+        width: 75px;
+        padding: 20px;  
+    }
+}
+
+#main-section4-about{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: "h2 h2" "send-message-about contact-information-about" "send-message information-text-about";
+
+    h2{
+        font-size: 2.0rem;
+        text-align: center; 
+        margin-bottom: 0px; 
+        grid-area: h2; 
+    }
+
+    form{
+        
+        input{
+            margin-top: 5px; 
+            padding: 5px 3px 5px 3px; 
+            margin-bottom: 10px; 
+        }
+
+        #send-message-input{
+            background-color: #e6bd43;
+            padding: 10px; 
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    #send-message-about{
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+        grid-area: send-message-about; 
+        padding-top: 20px; 
+        margin-left: 300px; 
+    }
+
+    #contact-information-about{
+        font-size: 1.3rem; 
+        grid-area: contact-information-about;
+        padding-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 200px;  
+    }
+
+    #send-message{
+        grid-area: send-message;
+        margin: 20px 0px 50px 300px;
+    }
+
+    #information-text-about{
+        grid-area: information-text-about; 
+        margin: 20px 16px 0px 200px; 
+    }
+
+    #adress-about{
+        grid-area: information-text-about; 
+        margin: 90px 16px 0px 200px;
+        font-size: 1.1rem; 
+        font-weight: 600;   
+    }
+
+    #phone-number-about{
+        grid-area: information-text-about; 
+        margin: 125px 16px 0px 200px;
+        font-size: 1.1rem; 
+        font-weight: 600;    
+    }
+
+    #mailadress-about{
+        grid-area: information-text-about; 
+        margin: 160px 16px 0px 200px; 
+        font-size: 1.1rem;
+        font-weight: 600;    
+    }
+}
+
+#google-maps{ 
+    width: 1920px;
+    height: 250px; 
+}
+
+/* Footer med styling css*/
+footer{
+    background-color: #000;  
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    
+    a{
+
+        img{
+            width: 75px;
+        }
+    }
+
+    #footer-company-text{
+        padding-left: 700px;
+        padding-right: 625px; 
+    }
+
+   
+    
+    .footer-text{
+        color: #fff;
+        align-self: center; 
+    }
+
+    .sosiale-medier{
+        color: #fff;
+        text-decoration: none; 
+    }
+
+
+}
+    
+
+
 
